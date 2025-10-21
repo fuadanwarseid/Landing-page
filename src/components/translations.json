@@ -1,0 +1,49 @@
+
+{
+  "en": {
+    "companyName": "Welcome to Teamwork IT Solutions",
+    "slogan": "Come and work together.",
+    "motivation": "Explore our world of innovative tech and community projects. Check out our channels below!",
+    "getStarted": "Get Started Now →",
+    "popup": {
+      "title": "Where should we take you?",
+      "text": "Enter your work email to quickly find your team portal.",
+      "continue": "Continue →",
+      "welcome": "Welcome Back,",
+      "selectLink": " Please Select your destination link:",
+      "newUser": "New to Teamwork IT Solution?",
+      "notRegistered": "It looks like <strong>{email}</strong> isn't in our system yet.",
+      "register": "Register for a New Account",
+      "differentEmail": "Use a different email",
+      "invalidEmail": "Please enter a valid email address."
+    },
+    "links": [
+      { "name": "Urban Land and Infrastructure System", "url": "https://city.development.teamworksc.com/" },
+      { "name": "FMS", "url": "http://teamworksw.com/FMS" },
+      { "name": "scfam", "url": "http://teamworksw.com/SCFMS" }
+    ]
+  },
+  "am": {
+    "companyName": "እንኳን ወደ ቲምወርክ አይቲ ሶሉሽን በደህና መጡ",
+    "slogan": "ኑ በጋራ እንሥራ! ",
+    "motivation": "የፈጠራ ቴክኖሎጂ እና የማህበረሰብ ፕሮጀክቶች ዓለማችንን ያስሱ። ከታች ያሉትን ቻናሎቻችንን ይመልከቱ!",
+    "getStarted": "አሁን ይጀምሩ →",
+    "popup": {
+      "title": "ወዴት መውሰድ እንችላለን?",
+      "text": "የቡድንዎን ፖርታል በፍጥነት ለመፈለግ የሥራ ኢሜልዎን ያስገቡ።",
+      "continue": "ቀጥል →",
+      "welcome": "እንኳን ደህና መጡ፣",
+      "selectLink": "እባክዎ መድረሻ ሊንክወን ይምረጡ፡",
+      "newUser": "ለቲምወርክ አይቲ ሶሉሽን አዲስ ነዎት?",
+      "notRegistered": "<strong>{email}</strong> ገና በስርዓታችን ውስጥ አልተመዘገበም።",
+      "register": "ለአዲስ መለያ ይመዝገቡ",
+      "differentEmail": "ሌላ ኢሜል ይጠቀሙ",
+      "invalidEmail": "እባክዎ ትክክለኛ ኢሜል አድራሻ ያስገቡ።"
+    },
+    "links": [
+      { "name": "Urban Land and Infrastructure System", "url": "https://www.lexilogos.com/keyboard/amhari" },
+      { "name": "FMS", "url": "https://www.lexilogos.com/keyboard/amhari" },
+      { "name": "SCFAM ", "url": "https://www.lexilogos.com/keyboard/amhari" }
+    ]
+  }
+}
