@@ -5,37 +5,41 @@ import translations from './translations.json';
 
 const socialChannels = [
   {
-    name: 'TikTok',
-    icon: 'https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg',
-    url: 'https://www.tiktok.com/@teamworkit1?is_from_webapp=1&sender_device=pc',
-    colorClass: 'tiktok',
-    imageUrl: 'https://images.unsplash.com/photo-1611162617210-7d673bf0f5c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    actionText: { en: 'Follow', am: 'ተከተል' }
+    name: "TikTok",
+    icon: "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+    url: "https://www.tiktok.com/@teamwork6312",
+    colorClass: "tiktok",
+    imageUrl:
+      "https://images.unsplash.com/photo-1611162617210-7d673bf0f5c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    actionText: { en: "Follow", am: "ተከተል" },
   },
   {
-    name: 'YouTube',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg',
-    url: 'http://www.youtube.com/@teamworksc',
-    colorClass: 'youtube',
-    imageUrl: 'https://images.unsplash.com/photo-1611162617474-5b21e879e943?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    actionText: { en: 'Subscribe', am: 'ይመዝገቡ' }
+    name: "YouTube",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg",
+    url: "https://www.youtube.com/@teamworksc",
+    colorClass: "youtube",
+    imageUrl:
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e943?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    actionText: { en: "Subscribe", am: "ይመዝገቡ" },
   },
   {
-    name: 'Facebook',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg',
-    url: 'https://facebook.com/groups/540668018528410',
-    colorClass: 'facebook',
-    imageUrl: 'https://images.unsplash.com/photo-1611162618071-8f9d2526c3c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    actionText: { en: 'Follow', am: 'ተከተል' }
+    name: "Facebook",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+    url: "https://www.facebook.com/groups/540668018528410",
+    colorClass: "facebook",
+    imageUrl:
+      "https://images.unsplash.com/photo-1611162618071-8f9d2526c3c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    actionText: { en: "Follow", am: "ተከተል" },
   },
   {
-    name: 'Telegram',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg',
-    url: 'https://t.me/teamwork_12',
-    colorClass: 'telegram',
-    imageUrl: 'https://images.unsplash.com/photo-1611162618071-8f9d2526c3c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    actionText: { en: 'Subscribe', am: 'ይመዝገቡ' }
-  }
+    name: "Telegram",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    url: "https://www.t.me/teamwork_12",
+    colorClass: "telegram",
+    imageUrl:
+      "https://images.unsplash.com/photo-1611162618071-8f9d2526c3c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    actionText: { en: "Subscribe", am: "ይመዝገቡ" },
+  },
 ];
 
 

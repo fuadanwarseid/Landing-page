@@ -3,7 +3,7 @@
   "en": {
     "companyName": "Welcome to Teamwork IT Solutions",
     "slogan": "Come and work together.",
-    "motivation": "Explore our world of innovative tech and community projects. Check out our channels below!",
+    "motivation": "Together, we’re shaping Ethiopia’s digital future with passion and innovation. Check out our channels below!",
     "getStarted": "Get Started Now →",
     "popup": {
       "title": "Where should we take you?",
@@ -20,13 +20,13 @@
     "links": [
       { "name": "Urban Land and Infrastructure System", "url": "https://city.development.teamworksc.com/" },
       { "name": "FMS", "url": "http://teamworksw.com/FMS" },
-      { "name": "scfam", "url": "http://teamworksw.com/SCFMS" }
+      { "name": "SCFAM", "url": "http://teamworksw.com/SCFMS" }
     ]
   },
   "am": {
     "companyName": "እንኳን ወደ ቲምወርክ አይቲ ሶሉሽን በደህና መጡ",
     "slogan": "ኑ በጋራ እንሥራ! ",
-    "motivation": "የፈጠራ ቴክኖሎጂ እና የማህበረሰብ ፕሮጀክቶች ዓለማችንን ያስሱ። ከታች ያሉትን ቻናሎቻችንን ይመልከቱ!",
+    "motivation": "በጋራ የኢትዮጵያን ዲጂታል የወደፊት ዕጣ ፈንታ በጋለ ስሜት እና በፈጠራ እየመራን ነው ከታች ያሉትን ቻናሎቻችንን ይመልከቱ!",
     "getStarted": "አሁን ይጀምሩ →",
     "popup": {
       "title": "ወዴት መውሰድ እንችላለን?",
