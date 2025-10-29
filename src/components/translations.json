@@ -1,49 +1,53 @@
-
 {
   "en": {
-    "companyName": "Welcome to Teamwork IT Solutions",
-    "slogan": "Come and work together.",
-    "motivation": "Together, we’re shaping Ethiopia’s digital future with passion and innovation. Check out our channels below!",
-    "getStarted": "Get Started Now →",
+    "companyName": "Welcome to Teamwork IT Solution",
+    "slogan": "Let’s Build a Smarter, Digital Ethiopia Together",
+    "motivation": "come and work together.",
+    "viewWebsite": "View Website",
+    "signup": "Sign Up in Main site",
+    "signin": "Sign In",
+    "contactPhone": "Phone",
+    "contactEmail": "Email",
+    "join":"Join Teamwork IT Solution where ideas become digital reality!",
     "popup": {
-      "title": "Where should we take you?",
-      "text": "Enter your work email to quickly find your team portal.",
-      "continue": "Continue →",
-      "welcome": "Welcome Back,",
-      "selectLink": " Please Select your destination link:",
-      "newUser": "New to Teamwork IT Solution?",
-      "notRegistered": "It looks like <strong>{email}</strong> isn't in our system yet.",
-      "register": "Register for a New Account",
-      "differentEmail": "Use a different email",
-      "invalidEmail": "Please enter a valid email address."
-    },
-    "links": [
-      { "name": "Urban Land and Infrastructure System", "url": "https://city.development.teamworksc.com/" },
-      { "name": "FMS", "url": "http://teamworksw.com/FMS" },
-      { "name": "SCFAM", "url": "http://teamworksw.com/SCFMS" }
-    ]
+      "title": "Welcome Back",
+      "text": "Enter your email or phone to continue",
+      "checking": "Checking...",
+      "continue": "Continue",
+      "invalidPhone": "Please enter a valid phone/email",
+      "apiError": "Error connecting to server",
+      "welcome": "Hello",
+      "selectSystem": "Choose your link to continue:",
+      "differentPhone": "Use different phone/email",
+      "newUser": "New User Detected",
+      "notRegistered": "The phone/email <strong>{phone}</strong> is not registered. Please sign up.",
+      "register": "Sign Up"
+    }
   },
   "am": {
-    "companyName": "እንኳን ወደ ቲምወርክ አይቲ ሶሉሽን በደህና መጡ",
-    "slogan": "ኑ በጋራ እንሥራ! ",
-    "motivation": "በጋራ የኢትዮጵያን ዲጂታል የወደፊት ዕጣ ፈንታ በጋለ ስሜት እና በፈጠራ እየመራን ነው ከታች ያሉትን ቻናሎቻችንን ይመልከቱ!",
-    "getStarted": "አሁን ይጀምሩ →",
+    "companyName": "እንኳን ወደ ቲምወርክ አይቲ ሶሉሽን በደህና መጡ!",
+    "slogan": "በአንድነት የተሻለች ዲጂታል ኢትዮጵያን እንገነባ!",
+    "motivation": "ኑ በጋራ እንሥራ!",
+    "viewWebsite": "ድህረገፅ ይጎብኙ",
+    "signup": "ዋና ሳይት ላይ ይመዝገቡ",
+    "signin": "ይግቡ",
+    "contactPhone": "ስልክ",
+    "contactEmail": "ኢሜል",
+    "join":"ሀሳቦች ወደ ዲጂታል እውነታ የሚቀየሩበት ቲምወርክ አይቲ ሶሉሽን አካል ይሁኑ!",
     "popup": {
-      "title": "ወዴት መውሰድ እንችላለን?",
-      "text": "የቡድንዎን ፖርታል በፍጥነት ለመፈለግ የሥራ ኢሜልዎን ያስገቡ።",
-      "continue": "ቀጥል →",
-      "welcome": "እንኳን ደህና መጡ፣",
-      "selectLink": "እባክዎ መድረሻ ሊንክወን ይምረጡ፡",
-      "newUser": "ለቲምወርክ አይቲ ሶሉሽን አዲስ ነዎት?",
-      "notRegistered": "<strong>{email}</strong> ገና በስርዓታችን ውስጥ አልተመዘገበም።",
-      "register": "ለአዲስ መለያ ይመዝገቡ",
-      "differentEmail": "ሌላ ኢሜል ይጠቀሙ",
-      "invalidEmail": "እባክዎ ትክክለኛ ኢሜል አድራሻ ያስገቡ።"
-    },
-    "links": [
-      { "name": "Urban Land and Infrastructure System", "url": "https://www.lexilogos.com/keyboard/amhari" },
-      { "name": "FMS", "url": "https://www.lexilogos.com/keyboard/amhari" },
-      { "name": "SCFAM ", "url": "https://www.lexilogos.com/keyboard/amhari" }
-    ]
+      "title": "እንኳን ደህና መጣህ",
+      "text": "ለማቀጣጠል ኢሜልዎን ወይም ስልክዎን ያስገቡ",
+      "checking": "በማረጋገጥ...",
+      "continue": "ይቀጥሉ",
+      "invalidPhone": "እባክዎን ትክክለኛ ስልክ/ኢሜል ያስገቡ",
+      "apiError": "ከአገልግሎት ጋር ስህተት ተፈጥሯል",
+      "welcome": "ሰላም",
+      "selectSystem": "ለማቀጣጠል ሊንክዎን ይምረጡ:",
+      "differentPhone": "ሌላ ስልክ/ኢሜል ይጠቀሙ",
+      "newUser": "አዲስ ተጠቃሚ ተገኝቷል",
+      "notRegistered": "ስልክ/ኢሜል <strong>{phone}</strong> ይመዝገብ አልተደረገም። እባክዎን ይመዝገቡ።",
+      "register": "ይመዝገቡ"
+    }
+    
   }
 }

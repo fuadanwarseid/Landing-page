@@ -153,6 +153,31 @@ body {
   text-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
     animation: textReveal 1s ease-out forwards;
 }
+.join,
+.slogan,
+.motivation-text {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slogan,
+.motivation-text {
+  padding-top: 10px;
+}
+
+.join {
+
+  color: rgb(106, 197, 224);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  text-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+  animation: textReveal 1s ease-out forwards;
+  align-items: center;
+
+
+}
 
 .slogan {
   font-size: clamp(0.9rem, 1.6vw, 1.35rem);
@@ -184,6 +209,7 @@ body {
   cursor: pointer;
   box-shadow: 0 8px 30px rgba(14,49,70,0.18);
   transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast);
+  margin-top: 20px;
 }
 .get-started-button:hover,
 .get-started-button:focus {
@@ -194,12 +220,11 @@ body {
 
 .motivation-text {
   max-width: 900px;
-  color: rgba(255,255,255,0.88);
-  font-size: 1.45rem;
+  font-size: 1.8rem;
   margin-top: 6px;
   margin-bottom: 0;
   width: 100%;
-  color: #7dd3f5;
+  color: var(--text-yellow);
 }
 
 /* Social grid */
@@ -415,6 +440,101 @@ button:focus, a:focus, select:focus {
   outline-offset: 3px;
   border-radius: 8px;
 }
+.get-started-button {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 21px;
+  box-shadow: 0 8px 30px rgba(14, 49, 70, 0.18);
+  transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast);
+}
+
+.get-started-button:hover,
+.get-started-button:focus {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 18px 48px rgba(14, 49, 70, 0.26);
+  outline: none;
+}
+
+.footer {
+  background: #07102a;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about h2 {
+  color: #7dd3f5;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-about .motivation {
+  margin-top: 10px;
+  font-style: italic;
+  color: #8ac6d1;
+  font-weight: 500;
+}
+
+.footer-social h3,
+.footer-contact h3 {
+  color: #7dd3f5;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #7dd3f5;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.footer-bottom .tagline {
+  margin-top: 5px;
+  color: #7dd3f5;
+  font-weight: 500;
+}
 
 /* Responsive tuning */
 /* Extra small devices (phones, <576px) */
@@ -426,6 +546,9 @@ button:focus, a:focus, select:focus {
   .language-select { padding: 6px 12px; font-size: 0.9rem; }
   .hero-section { gap: 10px; margin-bottom: 14px; }
   .welcome-message { font-size: clamp(1.2rem, 6vw, 2.5rem); }
+    .join {
+      font-size: clamp(1.2rem, 6vw, 2.5rem);
+    }
   .slogan { font-size: clamp(0.8rem, 3vw, 1.1rem); }
   .hero-actions { gap: 10px; flex-direction: column; }
   .get-started-button { padding: 10px 18px; font-size: 0.95rem; }
@@ -450,6 +573,9 @@ button:focus, a:focus, select:focus {
   .logo-image { width: clamp(70px, 9vw, 100px); height: clamp(70px, 9vw, 100px); }
   .hero-section { gap: 12px; }
   .welcome-message { font-size: clamp(1.3rem, 5vw, 2.8rem); }
+     .join {
+       font-size: clamp(1.3rem, 5vw, 2.8rem);
+     }
   .slogan { font-size: clamp(0.85rem, 2.5vw, 1.2rem); }
   .social-grid { gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .image-preview-box { padding-top: 60%; }
@@ -462,6 +588,9 @@ button:focus, a:focus, select:focus {
   .landing-page-card { padding: 32px; }
   .hero-section { gap: 14px; }
   .welcome-message { font-size: clamp(1.5rem, 4vw, 3rem); }
+    .join {
+      font-size: clamp(1.5rem, 4vw, 3rem);
+    }
   .slogan { font-size: clamp(0.95rem, 2vw, 1.3rem); }
   .social-grid { gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
   .image-preview-box { padding-top: 58%; }
@@ -489,4 +618,13 @@ button:focus, a:focus, select:focus {
   .landing-page-card { padding: 54px 64px; border-radius: 18px; }
   .social-grid { gap: 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
   .image-preview-box { padding-top: 48%; }
+}
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .social-links {
+    align-items: center;
+  }
 }
