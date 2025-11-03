@@ -161,22 +161,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .slogan,
 .motivation-text {
   padding-top: 10px;
 }
 
 .join {
-
   color: rgb(106, 197, 224);
   letter-spacing: -0.02em;
   font-weight: 500;
   text-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
   animation: textReveal 1s ease-out forwards;
   align-items: center;
-
-
+  
 }
 
 .slogan {
@@ -452,7 +449,6 @@ button:focus, a:focus, select:focus {
   box-shadow: 0 8px 30px rgba(14, 49, 70, 0.18);
   transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast);
 }
-
 .get-started-button:hover,
 .get-started-button:focus {
   transform: translateY(-4px) scale(1.02);
@@ -534,6 +530,48 @@ button:focus, a:focus, select:focus {
   margin-top: 5px;
   color: #7dd3f5;
   font-weight: 500;
+}
+/* Support Dropdown Styles */
+.support-dropdown {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+}
+
+.support-dropdown summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--accent);
+  transition: color var(--transition-fast);
+}
+
+.support-dropdown summary:hover {
+  color: #fff;
+}
+
+.support-dropdown ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.support-dropdown li {
+  margin: 6px 0;
+}
+
+.support-dropdown a {
+  color: #a6e3ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.support-dropdown a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* Responsive tuning */
@@ -622,9 +660,10 @@ button:focus, a:focus, select:focus {
 @media (max-width: 768px) {
   .footer {
     text-align: center;
-  }
-
+  
   .social-links {
     align-items: center;
   }
+}
+
 }

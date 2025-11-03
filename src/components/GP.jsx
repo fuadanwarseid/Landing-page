@@ -6,7 +6,6 @@ const GuidePopup = () => {
   const [countdown, setCountdown] = useState(20);
 
   useEffect(() => {
-   
     const showTimer = setTimeout(() => {
       setShowPopup(true);
     }, 10000);
@@ -14,7 +13,6 @@ const GuidePopup = () => {
     return () => clearTimeout(showTimer);
   }, []);
 
-  
   useEffect(() => {
     if (showPopup && countdown > 0) {
       const timer = setInterval(() => {
@@ -42,19 +40,11 @@ const GuidePopup = () => {
       <div className="guide-popup">
         <div className="countdown-timer">{countdown}s</div>
 
-        <h2>🎓 እንኳን በደህና መጡ!</h2>
-        <p>
-          ከመጀመርዎ በፊት ይህን መመሪያ ቪዲዮ ይመልከቱ።  
-          እንዴት መመዝገብና መግባት እንደሚቻል ያሳያል።
-        </p>
+        <h2> እንኳን ደህና መጡ!</h2>
+        <p>ከመጀመርዎ በፊት ይህን መመሪያ ቪዲዮ ይመልከቱ እንዴት መመዝገብና መግባት እንደሚቻል ያሳያል</p>
 
-        {/* የYouTube ቪዲዮ ቅድመ እይታ */}
         <div className="thumbnail-container" onClick={handleViewGuide}>
-          <img
-            src="team.png"
-            alt="መመሪያ ቪዲዮ"
-            className="thumbnail-img"
-          />
+          <img src="team.png" alt="መመሪያ ቪዲዮ" className="thumbnail-img" />
           <div className="play-button">▶</div>
         </div>
 

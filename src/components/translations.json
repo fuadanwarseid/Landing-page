@@ -47,7 +47,20 @@
       "newUser": "አዲስ ተጠቃሚ ተገኝቷል",
       "notRegistered": "ስልክ/ኢሜል <strong>{phone}</strong> ይመዝገብ አልተደረገም። እባክዎን ይመዝገቡ።",
       "register": "ይመዝገቡ"
-    }
+    },
+    "support": {
+  "title": "How to Sign In / Sign Up (Video Guides)",
+  "title_am": "እንዴት መመዝገብ / መግባት እንደሚቻል (ቪዲዮ መመሪያ)",
+  "main": "Main Website Guide",
+  "main_am": "ዋና ድህረ ገጽ መመሪያ",
+  "system1": "System 1 Guide",
+  "system1_am": "ስርዓት 1 መመሪያ",
+  "system2": "System 2 Guide",
+  "system2_am": "ስርዓት 2 መመሪያ",
+  "system3": "System 3 Guide",
+  "system3_am": "ስርዓት 3 መመሪያ"
+}
+
     
   }
 }

@@ -2,14 +2,11 @@
 import Landing from './components/Landing.jsx';
 import GP from './components/GP.jsx';
 
-
-
 const App = () => {
   return (
     <div>
       <GP/>
-      <Landing/>
-      
+      <Landing/> 
     </div>
   )
 }
