@@ -396,6 +396,8 @@ body {
   border: 1px solid #e6e9ef;
   box-sizing: border-box;
   font-size: 1rem;
+  margin-top: 15px;
+    margin-bottom: 15px;
 }
 .email-input:focus {
   outline: none;
@@ -457,20 +459,28 @@ button:focus, a:focus, select:focus {
 }
 
 .footer {
+  width: 100vw;
   background: #07102a;
   color: #fff;
   padding: 60px 20px 20px;
   font-family: 'Poppins', sans-serif;
   margin-top: 30px;
-
+  box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: -10.4vh;
 }
 
 .footer-container {
-  display: grid;
+display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: auto;
+  
 }
 
 .footer-about h2 {
