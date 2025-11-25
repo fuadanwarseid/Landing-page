@@ -290,7 +290,7 @@ const LandingPage = () => {
             <ul>
               <li>
                 <a
-                  href="https://youtu.be/TwYNl_KCsIk"
+                  href="https://www.youtube.com/@teamworksc"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -299,7 +299,7 @@ const LandingPage = () => {
               </li>
               <li>
                 <a
-                  href="https://youtu.be/TwYNl_KCsIk"
+                  href="https://www.youtube.com/@teamworksc"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -308,7 +308,7 @@ const LandingPage = () => {
               </li>
               <li>
                 <a
-                  href="https://youtu.be/TwYNl_KCsIk"
+                  href="https://www.youtube.com/@teamworksc"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -317,7 +317,7 @@ const LandingPage = () => {
               </li>
               <li>
                 <a
-                  href="https://youtu.be/TwYNl_KCsIk"
+                  href="https://www.youtube.com/@teamworksc"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -25,7 +25,7 @@ const GuidePopup = () => {
   }, [showPopup, countdown]);
 
   const handleViewGuide = () => {
-    window.open("https://youtu.be/PIiOX7YETIY?si=pKXeS6tlijqL0RZh", "_blank");
+    window.open("https://www.youtube.com/@teamworksc", "_blank");
     setShowPopup(false);
   };
 
