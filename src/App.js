@@ -1,14 +1,18 @@
-
-import Landing from './components/Landing.jsx';
-import GP from './components/GP.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./components/Landing.jsx";
+import SignupPage from "./components/pages/SignupPage.jsx";
+import GP from "./components/GP.jsx";
 
 const App = () => {
   return (
-    <div>
-      <GP/>
-      <Landing/> 
-    </div>
-  )
-}
+    <BrowserRouter>
+      <GP />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/signup" element={<SignupPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

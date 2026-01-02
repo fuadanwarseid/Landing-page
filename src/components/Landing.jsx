@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate, useLocation } from "react-router-dom"; // Added for routing
 import "./Landing.css";
 import translations from "./translations.json";
 
@@ -88,7 +89,6 @@ const EmailFlowPopup = ({ onClose, onNavigate, language }) => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // backend login API
   const LOGIN_API = "https://api.teamworksc.com/api/v1/users/exist";
 
   const systems = [
@@ -237,8 +237,24 @@ const LandingPage = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [language, setLanguage] = useState("am");
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Check if we came back from successful signup → open login popup
+  useEffect(() => {
+    if (location.state?.openLoginPopup) {
+      setShowPopup(true);
+      // Clean up the state so it doesn't trigger again on refresh
+      navigate(".", { replace: true, state: {} });
+    }
+  }, [location.state, navigate]);
+
   const handleNavigate = (url) => {
     window.location.href = url;
+  };
+
+  const goToSignup = () => {
+    navigate("/signup", { state: { fromLanding: true } });
   };
 
   return (
@@ -279,6 +295,7 @@ const LandingPage = () => {
             />
           ))}
         </section>
+
         {/* Support Dropdown Section */}
         <div className="support-dropdown">
           <details>
@@ -329,10 +346,7 @@ const LandingPage = () => {
         </div>
 
         <div className="hero-actions" style={{ marginTop: "20px" }}>
-          <button
-            className="get-started-button"
-            onClick={() => handleNavigate("https://teamworksc.com/signup")}
-          >
+          <button className="get-started-button" onClick={goToSignup}>
             {translations[language].signup}
           </button>
           <button
@@ -363,9 +377,9 @@ const LandingPage = () => {
 
             <div className="footer-contact">
               <h3>Contact</h3>
-              <p>📍 Addis Ababa, Ethiopia</p>
-              <p>📧 teamworkitsolution3126@gmail.com</p>
-              <p>📞 0923227081 / 011 650 6569</p>
+              <p>Addis Ababa, Ethiopia</p>
+              <p>teamworkitsolution3126@gmail.com</p>
+              <p>0923227081 / 011 650 6569</p>
             </div>
           </div>
 
