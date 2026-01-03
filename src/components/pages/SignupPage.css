@@ -5,14 +5,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 20px; 
+  padding: 40px 20px;
   gap: 24px;
+  box-sizing: border-box;
 }
 
 .main-title {
-  font-size: 28px; 
+  font-size: 28px;
   font-weight: 700;
-  color: #ff5722;;
+  color: #ff5722;
   text-align: center;
   margin: 0;
 }
@@ -22,46 +23,46 @@
   border-radius: 14px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 460px;
-  padding: 32px 30px; 
+  max-width: 500px;
+    padding: 40px 32px;
   box-sizing: border-box;
 }
 
+/* Grid-based responsive rows */
 .row {
-  display: flex;
-  gap: 18px; 
-  margin-bottom: 22px; 
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
 }
 
 .field {
-  flex: 1;
-
+  display: flex;
+    flex-direction: column;
 }
 
 .field.full {
-  flex: none;
-  margin-bottom: 22px;
+  grid-column: 1 / -1;
+    margin-bottom: 24px;
 }
 
 .field label {
-  display: block;
   margin-bottom: 8px;
   font-weight: 500;
   color: #444;
-  font-size: 14.5px; 
+  font-size: 14.5px;
 }
 
-.field input  {
-  width: 170px;
-  height: 10px;
+.field input {
+  width: 100%;
   padding: 14px 16px;
   border: 1px solid #ddd;
   border-radius: 10px;
   font-size: 15.5px;
   background: #f8fbff;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+    box-sizing: border-box;
 }
-
 
 .field input:focus {
   outline: none;
@@ -75,8 +76,7 @@
 }
 
 .password-wrapper input {
-  padding-right: 48px;
-  width: 360px;
+  padding-right: 50px;
 }
 
 .eye-icon {
@@ -87,6 +87,7 @@
   cursor: pointer;
   font-size: 19px;
   color: #888;
+  user-select: none;
 }
 
 .error {
@@ -96,27 +97,34 @@
   display: block;
 }
 
-
 .react-tel-input .form-control {
-  /* height: 50px !important; */
-    width: 205px;
-  height: 40px;
+  width: 100% !important;
+    height: 50px;
   padding-left: 62px !important;
   background: #f8fbff !important;
   border-radius: 10px !important;
   font-size: 15.5px !important;
   border: 1px solid #ddd !important;
+  transition: all 0.3s ease;
+  }
+  
+  .react-tel-input .form-control:focus {
+    outline: none;
+    border-color: #4a90e2 !important;
+    background: #eef5ff !important;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.12);
 }
 
 .react-tel-input .flag-dropdown {
   background: transparent !important;
   border: none !important;
   border-radius: 10px 0 0 10px !important;
+  left: 0;
 }
 
 .register-btn {
-  width: 425px;
-  padding: 10px;
+  width: 100%;
+    padding: 16px;
   background: #ff5722;
   color: white;
   border: none;
@@ -124,8 +132,8 @@
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 8px; 
-  transition: background 0.3s;
+  margin-top: 12px;
+    transition: background 0.3s ease;
 }
 
 .register-btn:hover:not(:disabled) {
@@ -138,8 +146,8 @@
 }
 
 .feedback {
-  margin-top: 18px;
-  padding: 12px;
+  margin-top: 20px;
+    padding: 14px;
   border-radius: 10px;
   text-align: center;
   font-weight: 500;
@@ -156,65 +164,23 @@
   color: #c62828;
 }
 
+/* OTP Section */
 .otp-section {
   text-align: center;
 }
 
-.otp-section p {
-  margin-bottom: 18px;
-  color: #555;
-  font-size: 15px;
-}
-
-.otp-section input {
-  width: 100%;
-  padding: 16px;
-  font-size: 24px;
-  text-align: center;
-  letter-spacing: 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin: 18px 0;
-}
-
-.back-link {
-  display: block;
-  margin-top: 14px;
-  color: #666;
-  font-size: 14.5px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.back-to-home {
-  margin-top: 24px;
-}
-
-.link-button {
-  background: none;
-  border: none;
-  color: #666;
-  font-size: 15px;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-
-
 .otp-title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: #333;
-  margin: 0 0 12px 0;
-  text-align: center;
+  margin-bottom: 16px;
 }
 
 .otp-timer {
   font-size: 16px;
   font-weight: 600;
   color: #ff5722;
-  margin: 0 0 20px 0;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .timer-display {
@@ -224,21 +190,22 @@
 .otp-instruction {
   color: #555;
   font-size: 15px;
-  margin: 0 0 24px 0;
-  text-align: center;
+  margin-bottom: 28px;
   line-height: 1.5;
 }
 
-.opt input {
-  width:390px;
-  padding: 16px; 
-font-size: 24px;
+.otp-input {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 24px;
+  padding: 18px;
+  font-size: 26px;
   text-align: center;
   letter-spacing: 12px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin: 18px 0;
   background: #f8fbff;
+  box-sizing: border-box;
 }
 
 .otp-input:focus {
@@ -249,17 +216,16 @@ font-size: 24px;
 }
 
 .resend-container {
-  margin-top: 20px;
+  margin-top: 24px;
   font-size: 14.5px;
   color: #555;
-  text-align: center;
 }
 
 .resend-link {
   color: #aaa;
   font-weight: 600;
-  cursor: not-allowed;
   text-decoration: underline;
+  cursor: not-allowed;
 }
 
 .resend-link.active {
@@ -271,11 +237,37 @@ font-size: 24px;
   color: #e64a19;
 }
 
+.back-link {
+  display: block;
+  margin-top: 20px;
+  color: #666;
+  font-size: 14.5px;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.back-to-home {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
 
 
-@media (max-width: 640px) {
+/* Tablet and below */
+@media (max-width: 768px) {
   .signup-container {
-    padding: 20px 15px;
+    padding: 30px 16px;
     gap: 20px;
   }
 
@@ -284,14 +276,30 @@ font-size: 24px;
   }
 
   .signup-card {
-    padding: 28px 22px;
-    max-width: 100%;
+    padding: 32px 24px;
+      max-width: 460px;
   }
 
   .row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 0;
-    margin-bottom: 18px;
+  .field.full {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Small mobile devices */
+  @media (max-width: 480px) {
+    .signup-container {
+      padding: 20px 12px;
+    }
+  
+    .main-title {
+      font-size: 24px;
+    }
+  
+    .signup-card {
+      padding: 28px 20px;
   }
 
   .field input,
@@ -299,19 +307,42 @@ font-size: 24px;
     padding: 13px 15px;
     font-size: 15px;
   }
+.register-btn {
+  padding: 14px;
+  font-size: 16.5px;
 }
 
-@media (max-height: 700px) {
+.otp-input {
+  font-size: 22px;
+  letter-spacing: 8px;
+  padding: 16px;
+}
+
+.password-wrapper input {
+  padding-right: 48px;
+}
+
+.eye-icon {
+  font-size: 18px;
+}
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
   .signup-container {
-    padding: 15px;
-    gap: 15px;
+    padding: 20px;
+      gap: 16px;
+      justify-content: flex-start;
+      padding-top: 40px;
   }
 
   .signup-card {
-    padding: 25px 20px;
+    padding: 24px 20px;
+      max-height: 90vh;
+      overflow-y: auto;
   }
 
   .main-title {
     font-size: 24px;
   }
+}
 }

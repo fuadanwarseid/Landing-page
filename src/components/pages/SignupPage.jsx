@@ -196,7 +196,9 @@ const SignupPage = () => {
                   value={formData.firstName}
                   onChange={handleInputChange}
                 />
-                {errors.firstName && <span className="error">{errors.firstName}</span>}
+                {errors.firstName && (
+                  <span className="error">{errors.firstName}</span>
+                )}
               </div>
               <div className="field">
                 <label>Last Name</label>
@@ -206,7 +208,9 @@ const SignupPage = () => {
                   value={formData.lastName}
                   onChange={handleInputChange}
                 />
-                {errors.lastName && <span className="error">{errors.lastName}</span>}
+                {errors.lastName && (
+                  <span className="error">{errors.lastName}</span>
+                )}
               </div>
             </div>
 
@@ -245,11 +249,11 @@ const SignupPage = () => {
                 <span
                   className="eye-icon"
                   onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? "👁️" : "👁️‍🗨️"}
-                </span>
+                ></span>
               </div>
-              {errors.password && <span className="error">{errors.password}</span>}
+              {errors.password && (
+                <span className="error">{errors.password}</span>
+              )}
             </div>
 
             <div className="field full">
@@ -264,11 +268,11 @@ const SignupPage = () => {
                 <span
                   className="eye-icon"
                   onClick={() => setShowConfirm(!showConfirm)}
-                >
-                  {showConfirm ? "👁️" : "👁️‍🗨️"}
-                </span>
+                ></span>
               </div>
-              {errors.confirmPassword && <span className="error">{errors.confirmPassword}</span>}
+              {errors.confirmPassword && (
+                <span className="error">{errors.confirmPassword}</span>
+              )}
             </div>
 
             <button type="submit" className="register-btn" disabled={loading}>
@@ -280,7 +284,8 @@ const SignupPage = () => {
             <h2 className="otp-title">Verify OTP</h2>
 
             <p className="otp-timer">
-              Time left: <span className="timer-display">{formatTime()}</span> minutes
+              Time left: <span className="timer-display">{formatTime()}</span>{" "}
+              minutes
             </p>
 
             <p className="otp-instruction">
@@ -288,17 +293,17 @@ const SignupPage = () => {
             </p>
 
             <div className="opt">
-<input
-              type="text"
-              placeholder="Enter OTP"
-              value={otp}
-              onChange={(e) =>
-                setOtp(e.target.value.replace(/\D/g, "").slice(0, 6))
-              }
-              maxLength="6"
-              className="otp-input"
-              autoFocus
-            />
+              <input
+                type="text"
+                placeholder="Enter OTP"
+                value={otp}
+                onChange={(e) =>
+                  setOtp(e.target.value.replace(/\D/g, "").slice(0, 6))
+                }
+                maxLength="6"
+                className="otp-input"
+                autoFocus
+              />
             </div>
 
             <button
@@ -330,14 +335,24 @@ const SignupPage = () => {
         )}
 
         {message && (
-          <div className={`feedback ${message.includes("success") || message.includes("sent") ? "success" : "error"}`}>
+          <div
+            className={`feedback ${
+              message.includes("success") || message.includes("sent")
+                ? "success"
+                : "error"
+            }`}
+          >
             {message}
           </div>
         )}
       </div>
 
       <div className="back-to-home">
-        <button type="button" onClick={() => navigate("/")} className="link-button">
+        <button
+          type="button"
+          onClick={() => navigate("/")}
+          className="link-button"
+        >
           ← Back to Home
         </button>
       </div>
