@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom"; // Added for routing
 import "./Landing.css";
 import translations from "./translations.json";
@@ -96,8 +97,8 @@ const EmailFlowPopup = ({ onClose, onNavigate, language }) => {
       name: "Urban Land and Infrastructure System",
       url: "https://city.development.teamworksc.com/",
     },
-    { name: "FMS", url: "http://teamworksw.com/FMS" },
-    { name: "SCFMS", url: "http://teamworksw.com/SCFMS" },
+    { name: "Teacher", url: "http://teamworksw.com/FMS" },
+    { name: "HRM ", url: "http://teamworksw.com/SCFMS" },
   ];
 
   const handleLogin = async (e) => {
@@ -329,7 +330,7 @@ const LandingPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {"SCFMS Guide"}
+                  {"HRM  Guide"}
                 </a>
               </li>
               <li>
@@ -338,7 +339,7 @@ const LandingPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {"FMS Guide"}
+                  {"Teacher Guide"}
                 </a>
               </li>
             </ul>
@@ -375,11 +376,22 @@ const LandingPage = () => {
               </p>
             </div>
 
-            <div className="footer-contact">
+            <div className="contact-info">
               <h3>Contact</h3>
-              <p>Addis Ababa, Ethiopia</p>
-              <p>teamworkitsolution3126@gmail.com</p>
-              <p>0923227081 / 011 650 6569</p>
+
+              <div>
+                <FaMapMarkerAlt className="icon" />
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+
+              <div>
+                <FaEnvelope className="icon" />
+                <span>teamworkitsolution3126@gmail.com</span>
+              </div>
+              <div>
+                <FaPhoneAlt className="icon" />
+                <span>0923227081 / 011 650 6569</span>
+              </div>
             </div>
           </div>
 

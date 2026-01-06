@@ -499,12 +499,32 @@ display: grid;
   color: #8ac6d1;
   font-weight: 500;
 }
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 16px;
+}
 
-.footer-social h3,
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  color: #1a8f5a;
+  /* Melona green (example) */
+  font-size: 20px;
+}
+
+/* .footer-social h3,
 .footer-contact h3 {
   color: #7dd3f5;
   margin-bottom: 10px;
 }
+
+*/
 
 .social-links {
   display: flex;
@@ -522,10 +542,12 @@ display: grid;
   color: #7dd3f5;
 }
 
-.footer-contact p {
+/* .footer-contact p {
   margin: 5px 0;
   font-size: 14px;
 }
+
+*/
 
 .footer-bottom {
   text-align: center;
