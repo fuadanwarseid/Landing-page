@@ -42,33 +42,7 @@ const socialChannels = [
       "https://images.unsplash.com/photo-1611162617474-5b21e879e943?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     actionText: { en: "Subscribe", am: "ይመዝገቡ" },
   },
-  {
-    name: "Instagram",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg",
-    url: "https://www.instagram.com/teamworkitsolution_3126/",
-    colorClass: "instagram",
-    imageUrl:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e943?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    actionText: { en: "Follow", am: "ተከተል" },
-  },
-  {
-    name: "Twitter",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg",
-    url: "https://www.x.com/TeamworkIT3",
-    colorClass: "twitter",
-    imageUrl:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e943?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    actionText: { en: "Follow", am: "ተከተል" },
-  },
-  {
-    name: "LinkedIn",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg",
-    url: "https://www.linkedin.com/company/108359956/",
-    colorClass: "linkedin",
-    imageUrl:
-      "https://images.unsplash.com/photo-1611162618071-8f9d2526c3c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    actionText: { en: "connect", am: "ይገናኙ" },
-  },
+
   {
     name: "Main site",
     icon: "TW.jpg",
@@ -241,11 +215,10 @@ const LandingPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Check if we came back from successful signup → open login popup
   useEffect(() => {
     if (location.state?.openLoginPopup) {
       setShowPopup(true);
-      // Clean up the state so it doesn't trigger again on refresh
+
       navigate(".", { replace: true, state: {} });
     }
   }, [location.state, navigate]);
