@@ -71,8 +71,8 @@ const EmailFlowPopup = ({ onClose, onNavigate, language }) => {
       name: "Urban Land and Infrastructure System",
       url: "https://city.development.teamworksc.com/",
     },
-    { name: "Teacher", url: "http://teamworksw.com/FMS" },
-    { name: "HRM ", url: "http://teamworksw.com/SCFMS" },
+    { name: "Teacher", url: "https://tsc.teamworksw.com" },
+    { name: "HRM ", url: "https://tis.teamworksw.com" },
   ];
 
   const handleLogin = async (e) => {
